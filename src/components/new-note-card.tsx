@@ -76,7 +76,7 @@ export function NewNoteCard({onNoteCreated}:NewNoteCardProps){
             automaticamente.
           </p>
           <div className="w-full h-full flex justify-center items-end">
-          <PlusCircle className="text-lime-400 group-hover:scale-75 transition duration-200 ease-in-out" size={50} />
+          <PlusCircle className="text-lime-400 group-hover:scale-75 transition duration-200 ease-in-out animate-ping" size={50} />
           </div>
           
         </Dialog.Trigger>
