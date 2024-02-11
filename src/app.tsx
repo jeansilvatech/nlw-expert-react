@@ -1,5 +1,6 @@
 import { ChangeEvent, useState } from "react";
 import logo from "./assets/nlw-expert.svg";
+import logoJS from './assets/logojs.svg'
 import { NewNoteCard } from "./components/new-note-card";
 import { NoteCard } from "./components/note-card";
 interface Note{
@@ -41,7 +42,13 @@ export function App() {
     const filteredNotes = search !== ''?notes.filter(note=>note.content.toLocaleLowerCase().includes(search.toLocaleLowerCase())):notes
   return (
     <div className="mx-auto max-w-6xl my-12 space-y-6 px-5">
+      <div className="flex flex-row items-center">
       <img src={logo} alt="logo nlw expert" />
+      <span className="ml-2 text-slate-500 font-semibold">by</span>
+      <a href="https://jeansilvatech.netlify.app" target="_blank">
+        <img src={logoJS} alt="" />
+      </a>
+      </div>
       <form className="w-full">
         <input
           type="text"
