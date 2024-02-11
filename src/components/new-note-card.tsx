@@ -1,5 +1,5 @@
 import * as Dialog from "@radix-ui/react-dialog";
-import { X, PlusCircle } from 'lucide-react'
+import { X, CircleFadingPlus } from 'lucide-react'
 import { ChangeEvent, FormEvent, useState } from "react";
 import {toast} from 'sonner';
 interface NewNoteCardProps{
@@ -67,7 +67,7 @@ export function NewNoteCard({onNoteCreated}:NewNoteCardProps){
     }
     return(
         <Dialog.Root>
-        <Dialog.Trigger className="flex flex-col text-left rounded-md bg-slate-700 p-5 gap-3 overflow-hidden hover:ring-2 hover:ring-lime-600 outline-none focus-visible:ring-2 focus-visible:ring-lime-400 group">
+        <Dialog.Trigger className="flex flex-col text-left rounded-md bg-lime-900 p-5 gap-3 overflow-hidden hover:ring-2 hover:ring-lime-600 outline-none focus-visible:ring-2 focus-visible:ring-lime-400 group">
           <span className="text-md font-medium text-lime-400">
             Adicionar nota
           </span>
@@ -76,9 +76,8 @@ export function NewNoteCard({onNoteCreated}:NewNoteCardProps){
             automaticamente.
           </p>
           <div className="w-full h-full flex justify-center items-end">
-          <PlusCircle className="text-lime-400 group-hover:scale-75 transition duration-200 ease-in-out animate-ping" size={50} />
+          <CircleFadingPlus className="text-lime-400 group-hover:scale-125 transition duration-300 ease-in-out" size={50} />
           </div>
-          
         </Dialog.Trigger>
         <Dialog.Portal>
         <Dialog.Overlay className="inset-0 fixed bg-black/50">
