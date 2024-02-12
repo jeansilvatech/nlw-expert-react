@@ -46,7 +46,7 @@ export function App() {
       <img src={logo} alt="logo nlw expert" />
       <span className="ml-2 text-slate-500 font-semibold">by</span>
       <a href="https://jeansilvatech.netlify.app" target="_blank">
-        <img src={logoJS} alt="" />
+        <img src={logoJS} width={40} alt="" />
       </a>
       </div>
       <form className="w-full">
