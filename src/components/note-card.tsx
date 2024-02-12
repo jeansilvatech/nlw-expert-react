@@ -1,7 +1,7 @@
 import * as Dialog from "@radix-ui/react-dialog";
 import { formatDistanceToNow } from 'date-fns';
 import {ptBR} from 'date-fns/locale';
-import { X, Clock, Pin, Paperclip } from 'lucide-react'
+import { X, Clock, Pin } from 'lucide-react'
 
 interface NoteCardProps {
   note: {
