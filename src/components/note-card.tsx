@@ -1,7 +1,7 @@
 import * as Dialog from "@radix-ui/react-dialog";
 import { formatDistanceToNow } from 'date-fns';
 import {ptBR} from 'date-fns/locale';
-import { X, Clock } from 'lucide-react'
+import { X, Clock, Pin, Paperclip } from 'lucide-react'
 
 interface NoteCardProps {
   note: {
@@ -15,6 +15,7 @@ export function NoteCard({ note, onNoteDeleted }: NoteCardProps) {
   return (
     <Dialog.Root>
       <Dialog.Trigger className="text-left rounded-md flex flex-col bg-slate-800 p-5 gap-3 overflow-hidden outline-none relative hover:ring-2 hover:ring-slate-600 transition duration-300 hover:scale-95 focus-visible:ring-2 focus-visible:ring-lime-400">
+      <Pin className="absolute right-0 top-0 rotate-45 text-lime-400" />
         <span className="text-md font-medium text-slate-300 flex flex-row justify-center items-center gap-2">
         {formatDistanceToNow(note.date, {locale:ptBR, addSuffix:true})}
         <Clock size={20} />

@@ -44,7 +44,7 @@ export function App() {
     <div className="mx-auto max-w-6xl my-12 space-y-6 px-5">
       <div className="flex flex-row items-center">
       <img src={logo} alt="logo nlw expert" />
-      <span className="ml-2 text-slate-500 font-semibold">by</span>
+      <span className="ml-2 mr-2 text-slate-500 font-semibold">by</span>
       <a href="https://jeansilvatech.netlify.app" target="_blank">
         <img src={logoJS} width={40} alt="" />
       </a>
